@@ -578,7 +578,7 @@ footer{
         margin-bottom: 50px;
     }
 }
-@media (min-width: 370px) and (max-width: 650px){
+@media (min-width: 10px) and (max-width: 650px){
     .first-main-wrapper, .second-main-wrapper{
         flex-direction: column;
         align-items: center;
