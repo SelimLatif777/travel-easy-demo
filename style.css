@@ -82,19 +82,20 @@
     font-family: 'Dm Serif Text', sans-serif;
     cursor: default;
 }
+.wrapper-main{
+    padding: 100px;
+}
 .heading-row{
     font-weight: 400;
     font-style: italic;
 }
 .first-main-wrapper{
     display: flex;
-    gap: 100px;
-    margin: 150px 100px 100px 100px;
+    gap: 50px;
 }
 .second-main-wrapper{
     display: flex;
-    gap: 100px;
-    margin: 0 100px 120px 100px;
+    gap: 50px;
 }
 .holiday-box{
     display: flex;
@@ -405,6 +406,9 @@ footer{
     .heading h1{
         font-size: 40px;
     }
+    .first-main-wrapper{
+        margin-bottom: 50px;
+    }
 }
 @media (min-width: 940px) and (max-width: 1150px){
     .first-main-wrapper, .second-main-wrapper{
@@ -448,6 +452,9 @@ footer{
     .heading h1{
         font-size: 38px;
     }
+    .first-main-wrapper{
+        margin-bottom: 50px;
+    }
 }
 @media (min-width: 870px) and (max-width: 940px){
     .first-main-wrapper, .second-main-wrapper{
@@ -490,6 +497,12 @@ footer{
     }
     .heading h1{
         font-size: 38px;
+    }
+    .wrapper-main{
+        padding: 50px;
+    }
+    .first-main-wrapper{
+        margin-bottom: 50px;
     }
 }
 @media (min-width: 650px) and (max-width: 870px){
@@ -557,6 +570,12 @@ footer{
     }
     .hamburger{
         display: inline-block;
+    }
+    .wrapper-main{
+        padding: 25px;
+    }
+    .first-main-wrapper{
+        margin-bottom: 50px;
     }
 }
 @media (min-width: 370px) and (max-width: 650px){
@@ -654,5 +673,11 @@ footer{
     .text-and-button-holder{
         width: 100%;
         margin-top: 20px;
+    }
+    .wrapper-main{
+        padding: 10px;
+    }
+    .first-main-wrapper{
+        margin-bottom: 50px;
     }
 }
