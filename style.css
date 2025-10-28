@@ -1,0 +1,658 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main-header{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+}
+#main-header.scrolled{
+    background-color: rgb(1, 96, 139);
+    padding: 5px 0;
+    transition: ease 0.5s;
+}
+.hero{
+    height: 960px;
+    background: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('images/winterlandscape.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    box-shadow: inset 0 -200px 100px -50px white;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.header-buttons-holder{
+    display: flex;
+    gap: 60px;
+}
+.header-buttons-holder a{
+    color: beige;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+}
+.header-buttons-holder a:hover{
+    font-size: 26px;
+    transition: ease-in 0.1s;
+    color: wheat;
+}
+.header-logo{
+    height: 80px;
+    width: auto;
+}
+.header-logo:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.booknow-button-holder{
+    background-color: rgb(0, 62, 90);
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: beige;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+.booknow-button-holder:hover{
+    padding: 14px 24px;
+    border-radius: 24px;
+    transition: ease-in-out 0.2s;
+    background-color: wheat;
+    color: #000000;
+}
+.heading{
+    width: 90%;
+    margin: 20% auto;
+}
+.heading h1{
+    text-align: center;
+    color: beige;
+    font-size: 48px;
+    font-family: 'Dm Serif Text', sans-serif;
+    cursor: default;
+}
+.heading-row{
+    font-weight: 400;
+    font-style: italic;
+}
+.first-main-wrapper{
+    display: flex;
+    gap: 100px;
+    margin: 150px 100px 60px 100px;
+}
+.second-main-wrapper{
+    display: flex;
+    gap: 100px;
+    margin: 0 100px 120px 100px;
+}
+.holiday-box{
+    display: flex;
+    background-color: rgb(1, 96, 139);
+    padding: 30px;
+    border-radius: 40px;
+    margin-bottom: 50px;
+    width: 60%;
+    align-items: center;
+}
+.holiday-box img{
+    height: auto;
+    width: 50%;
+    margin-right: 20px;
+    border-radius: 30px;
+}
+.pop:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.text-and-button-holder{
+    width: 50%;
+}
+.text-and-button-holder p{
+    font-size: 18px;
+    font-family: 'Dm Serif Text', sans-serif;
+    color: beige;
+    margin-bottom: 30px;
+    cursor: default;
+}
+.text-and-button-holder a{
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    color: beige;
+    text-decoration: none;
+    background-color: rgb(0, 62, 90);
+    padding: 5px 12px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+.text-and-button-holder a:hover{
+    padding: 7px 14px;
+    cursor: pointer;
+    background-color: bisque;
+    transition: ease-in-out 0.2s;
+    color: #000000;
+}
+.your-choice-text{
+    background-color: rgb(1, 96, 139);
+    width: 100%;
+    padding: 40px;
+    margin: 160px 0 250px 0;
+}
+.your-choice-text h2{
+    text-align: center;
+    font-size: 58px;
+    color: beige;
+    font-family: 'Dm Serif Text', sans-serif;
+    cursor: default;
+}
+.your-choice-text p{
+    text-align: center;
+    font-size: 28px;
+    color: beige;
+    font-family: 'Dm Serif Text', sans-serif;
+    margin-top: 10px;
+    cursor: default;
+}
+.your-choice-text a{
+    background-color: rgb(0, 62, 90);
+    color: beige;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 25px;
+    font-size: 24px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    display:block;
+    width: 140px;
+    margin: 20px auto;
+}
+.your-choice-text a:hover{
+    padding: 12px 27px;
+    background-color: wheat;
+    color: black;
+    font-size: 26px;
+    transition: ease-in-out 0.2s;
+    width: 151px;
+}
+.About{
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto 120px auto;
+    background-color: rgb(1, 96, 139);
+    box-shadow: 0 20px 80px 20px rgb(1, 96, 139);
+    border-radius: 50px;
+}
+.about-wrapper{
+    display: flex;
+    align-items: center;
+}
+.about-wrapper img{
+    height: 600px;
+    width: auto;
+}
+.about-text-holder h3{
+    font-size: 42px;
+    font-family: 'Dm Serif Text', sans-serif;
+    color: beige;
+    cursor: default;
+}
+.about-text-holder p{
+    font-size: 24px;
+    font-family: 'Dm Serif Text', sans-serif;
+    color: beige;
+    margin-top: 10px;
+    cursor: default;
+}
+footer{
+    margin-top: 280px;
+    background-color: rgb(1, 96, 139);
+}
+.info{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 50px;
+}
+.footer-logo{
+    height: 230px;
+    width: auto;
+    cursor: pointer;
+}
+.footer-logo:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.foot-text h3{
+    font-size: 32px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(245, 245, 220);
+    cursor: default;
+    margin-bottom: 20px;
+}
+.foot-text p{
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(245, 245, 220);
+    cursor: default;
+    font-style: italic;
+}
+.bout-info{
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    align-items: start;
+}
+.used-webs-info{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.used-webs-info a{
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(245, 245, 220);
+    text-decoration: none;
+    font-style: italic;
+}
+.used-webs-info h3{
+    font-size: 32px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(245, 245, 220);
+    cursor: default;
+}
+.used-webs-info a:hover{
+    font-size: 26px;
+    color: bisque;
+    transition: ease-in-out 0.2s;
+}
+.contact-info{
+    width: 25%;
+}
+.contact-info h3{
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-family: 'Oswald', sans-serif;
+    color: beige;
+    cursor: default;
+}
+.phone{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.phone img{
+    height: 40px;
+    width: auto;
+}
+.phone p{
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    color: beige;
+    cursor: default;
+    font-style: italic;
+}
+.mail{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.mail p{
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    color: beige;
+    cursor: default;
+    font-style: italic;
+}
+.mail img{
+    height: 40px;
+    width: auto;
+}
+.social-icons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 40px;
+}
+.social-icons a img{
+    width: 40px;
+    height: auto;
+}
+.social-icons a img:hover{
+    transform: scale(1.10);
+    transition: transform 0.3s ease;
+}
+.foot-hr{
+    background-color: rgb(0, 62, 90);
+    height: 3px;
+    width: 98%;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+.end-text{
+    color: beige;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    padding: 20px;
+}
+.booknow-holder-header{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.hamburger{
+    cursor: pointer;
+    width: 30px;
+    display: none;
+}
+.bar{
+    height: 3px;
+    background-color: rgb(0, 62, 90);
+    width: 30px;
+    margin: 4px;
+}
+@media (min-width: 1150px) and (max-width: 1440px) {
+    .first-main-wrapper, .second-main-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .holiday-box{
+        width: 100%;
+    }
+    .foot-text h3, .used-webs-info h3, .contact-info h3{
+        font-size: 24px;
+    }
+    .foot-text p, .used-webs-info a, .phone p, .mail p, .about-text-holder p, .your-choice-text p{
+        font-size: 20px;
+    }
+    .heading{
+        margin: 20% auto;
+    }
+    .your-choice-text h2{
+        font-size: 40px;
+    }
+    .footer-logo{
+        height: 150px;
+        width: auto;
+    }
+    .bout-info{
+        flex-direction: column;
+    }
+    .hero{
+        height: 650px;
+    }
+    #main-header{
+        padding: 10px;
+    }
+    .header-buttons-holder a{
+        font-size: 22px;
+    }
+    .header-buttons-holder a:hover{
+        font-size: 24px;
+    }
+    .heading h1{
+        font-size: 40px;
+    }
+}
+@media (min-width: 940px) and (max-width: 1150px){
+    .first-main-wrapper, .second-main-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .holiday-box{
+        width: 100%;
+    }
+    .foot-text h3, .used-webs-info h3, .contact-info h3{
+        font-size: 26px;
+    }
+    .foot-text p, .used-webs-info a, .phone p, .mail p, .about-text-holder p, .your-choice-text p{
+        font-size: 20px;
+    }
+    .heading{
+        margin: 20% auto;
+    }
+    .your-choice-text h2{
+        font-size: 36px;
+    }
+    .footer-logo{
+        height: 150px;
+        width: auto;
+    }
+    .bout-info{
+        flex-direction: column;
+    }
+    .hero{
+        height: 650px;
+    }
+    #main-header{
+        padding: 10px;
+    }
+    .header-buttons-holder a{
+        font-size: 22px;
+    }
+    .header-buttons-holder a:hover{
+        font-size: 24px;
+    }
+    .heading h1{
+        font-size: 38px;
+    }
+}
+@media (min-width: 870px) and (max-width: 940px){
+    .first-main-wrapper, .second-main-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .holiday-box{
+        width: 100%;
+    }
+    .foot-text h3, .used-webs-info h3, .contact-info h3{
+        font-size: 20px;
+    }
+    .foot-text p, .used-webs-info a, .phone p, .mail p, .about-text-holder p, .your-choice-text p{
+        font-size: 18px;
+    }
+    .heading{
+        margin: 25% auto;
+    }
+    .your-choice-text h2{
+        font-size: 36px;
+    }
+    .footer-logo{
+        height: 150px;
+        width: auto;
+    }
+    .bout-info{
+        flex-direction: column;
+    }
+    .hero{
+        height: 650px;
+    }
+    #main-header{
+        padding: 10px;
+    }
+    .header-buttons-holder a{
+        font-size: 20px;
+    }
+    .header-buttons-holder a:hover{
+        font-size: 22px;
+    }
+    .heading h1{
+        font-size: 38px;
+    }
+}
+@media (min-width: 650px) and (max-width: 870px){
+    .first-main-wrapper, .second-main-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .holiday-box{
+        width: 100%;
+    }
+    .foot-text h3, .used-webs-info h3, .contact-info h3{
+        font-size: 20px;
+    }
+    .foot-text p, .used-webs-info a, .phone p, .mail p, .about-text-holder p, .your-choice-text p{
+        font-size: 18px;
+    }
+    .heading{
+        margin: 30% auto;
+    }
+    .your-choice-text h2{
+        font-size: 36px;
+    }
+    .footer-logo{
+        height: 150px;
+        width: auto;
+    }
+    .bout-info{
+        flex-direction: column;
+    }
+    #main-header{
+        padding: 10px;
+    }   
+    .hero{
+        height: 650px;
+    }
+    .heading h1{
+        font-size: 34px;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+        transition: ease-in-out 0.4s;
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-6px) rotate(-45deg);
+        transition: ease-in-out 0.4s;
+    }
+    .header-buttons-holder{
+        position: fixed;
+        left: -100%;
+        top: 90px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        background-color: rgb(0, 62, 90);
+        padding: 20px;
+        transition: ease-in-out 0.4s;
+    }
+    .header-buttons-holder.active{
+        left: 0;
+    }
+    .hamburger{
+        display: inline-block;
+    }
+}
+@media (min-width: 370px) and (max-width: 650px){
+    .first-main-wrapper, .second-main-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .holiday-box{
+        width: 100%;
+    }
+    .foot-text h3, .used-webs-info h3, .contact-info h3{
+        font-size: 20px;
+    }
+    .foot-text p, .used-webs-info a, .phone p, .mail p, .about-text-holder p, .your-choice-text p{
+        font-size: 16px;
+    }
+    .heading{
+        margin: 40% auto;
+    }
+    .your-choice-text h2{
+        font-size: 36px;
+    }
+    .footer-logo{
+        height: 150px;
+        width: auto;
+    }
+    .bout-info{
+        flex-direction: column;
+    }
+    #main-header{
+        padding: 10px;
+    }   
+    .hero{
+        height: 650px;
+    }
+    .heading h1{
+        font-size: 30px;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+        transition: ease-in-out 0.4s;
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-6px) rotate(-45deg);
+        transition: ease-in-out 0.4s;
+    }
+    .header-buttons-holder{
+        position: fixed;
+        left: -100%;
+        top: 90px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        background-color: rgb(0, 62, 90);
+        padding: 20px;
+        transition: ease-in-out 0.4s;
+    }
+    .header-buttons-holder.active{
+        left: 0;
+    }
+    .hamburger{
+        display: inline-block;
+    }
+    .holiday-box, .about-wrapper, .info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .used-webs-info, .contact-info, .phone, .mail, .social-icons, .foot-text, .bout-info{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-wrapper{
+        flex-direction: column-reverse;
+    }
+    .about-wrapper img{
+        height: 300px;
+        width: auto;
+    }
+    .first-main-wrapper, .second-main-wrapper{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .holiday-box img{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .text-and-button-holder{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
