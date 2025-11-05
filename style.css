@@ -198,26 +198,27 @@
     margin-top: 10px;
     cursor: default;
 }
-.your-choice-text a{
+.find-now-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.find-now-button a{
     background-color: rgb(0, 62, 90);
     color: beige;
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
-    padding: 10px 25px;
     font-size: 24px;
-    border-radius: 20px;
     text-transform: uppercase;
-    display:block;
-    width: 140px;
-    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 20px;
 }
 .your-choice-text a:hover{
-    padding: 12px 27px;
+    padding: 12px 22px;
     background-color: wheat;
     color: black;
     font-size: 26px;
     transition: ease-in-out 0.2s;
-    width: 151px;
 }
 .About{
     padding: 20px;
@@ -538,6 +539,9 @@ footer{
     .first-main-wrapper{
         margin-bottom: 50px;
     }
+    .about-wrapper{
+        flex-direction: column-reverse;
+    }
 }
 @media (min-width: 650px) and (max-width: 870px){
     .first-main-wrapper, .second-main-wrapper{
@@ -586,7 +590,7 @@ footer{
         transform: translateY(-6px) rotate(-45deg);
         transition: ease-in-out 0.4s;
     }
-    .header-buttons-holder{
+    .navbar{
         position: fixed;
         left: -100%;
         top: 90px;
@@ -599,7 +603,7 @@ footer{
         padding: 20px;
         transition: ease-in-out 0.4s;
     }
-    .header-buttons-holder.active{
+    .navbar.active{
         left: 0;
     }
     .hamburger{
@@ -611,8 +615,8 @@ footer{
     .first-main-wrapper{
         margin-bottom: 50px;
     }
-    .navbar{
-        display: none;
+    .about-wrapper{
+        flex-direction: column-reverse;
     }
 }
 @media (min-width: 10px) and (max-width: 650px){
@@ -622,6 +626,9 @@ footer{
     }
     .holiday-box{
         width: 100%;
+    }
+    .your-choice-text h2{
+        font-size: 30px;
     }
     .foot-text h3, .used-webs-info h3, .contact-info h3{
         font-size: 20px;
@@ -648,8 +655,14 @@ footer{
     .hero{
         height: 650px;
     }
+    .find-now-button a{
+        font-size: 18px;
+    }
+    .find-now-button a:hover{
+        font-size: 20px;
+    }
     .heading h1{
-        font-size: 30px;
+        font-size: 22px;
     }
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
@@ -662,7 +675,7 @@ footer{
         transform: translateY(-6px) rotate(-45deg);
         transition: ease-in-out 0.4s;
     }
-    .header-buttons-holder{
+    .navbar{
         position: fixed;
         left: -100%;
         top: 90px;
@@ -675,7 +688,7 @@ footer{
         padding: 20px;
         transition: ease-in-out 0.4s;
     }
-    .header-buttons-holder.active{
+    .navbar.active{
         left: 0;
     }
     .hamburger{
@@ -716,8 +729,5 @@ footer{
     }
     .first-main-wrapper{
         margin-bottom: 50px;
-    }
-    .navbar{
-        display: none;
     }
 }
