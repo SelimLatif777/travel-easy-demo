@@ -611,6 +611,9 @@ footer{
     .first-main-wrapper{
         margin-bottom: 50px;
     }
+    .navbar{
+        display: none;
+    }
 }
 @media (min-width: 10px) and (max-width: 650px){
     .first-main-wrapper, .second-main-wrapper{
@@ -713,5 +716,8 @@ footer{
     }
     .first-main-wrapper{
         margin-bottom: 50px;
+    }
+    .navbar{
+        display: none;
     }
 }
